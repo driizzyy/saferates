@@ -52,6 +52,7 @@ pip install .
 
 ### Quick Example
 
+```bash
 from saferates import (
     SaferatesAPI, SaferatesChannels, SaferatesFriends, SaferatesGuilds,
     SaferatesEmbeds, SaferatesWebhooks, SaferatesReminders,
@@ -82,6 +83,7 @@ reminders.saferates_remind_me("YOUR_USER_ID", "This is your reminder!", delay_se
 
 polls = SaferatesPolls(api)
 polls.saferates_create_poll("CHANNEL_ID", "What's your favorite color?", ["🔴", "🟢", "🔵"])
+```
 
 ### Logging
 
