@@ -63,7 +63,7 @@ token = "YOUR_USER_TOKEN"
 api = SaferatesAPI(token)
 
 channels = SaferatesChannels(api)
-channels.saferates_send_message("CHANNEL_ID", "Hello! " + saferates_encode_emoji("😄"))
+channels.saferates_send_message("CHANNEL_ID", "Hello from saferates! " + saferates_encode_emoji("😄"))
 
 embeds = SaferatesEmbeds(api)
 embed = embeds.saferates_build_embed(title="Test", description="saferates embed", color=0x5865F2)
