@@ -61,32 +61,25 @@ from saferates import (
 token = "YOUR_USER_TOKEN"
 api = SaferatesAPI(token)
 
-# Messaging
 channels = SaferatesChannels(api)
 channels.saferates_send_message("CHANNEL_ID", "Hello! " + saferates_encode_emoji("😄"))
 
-# Send an embed
 embeds = SaferatesEmbeds(api)
 embed = embeds.saferates_build_embed(title="Test", description="saferates embed", color=0x5865F2)
 embeds.saferates_send_embed("CHANNEL_ID", embed)
 
-# Friends
 friends = SaferatesFriends(api)
 friends.saferates_add("USER_ID")
 
-# Guilds
 guilds = SaferatesGuilds(api)
 print(guilds.saferates_list())
 
-# Webhooks
 webhooks = SaferatesWebhooks()
 webhooks.saferates_send("WEBHOOK_URL", "Message via webhook")
 
-# Reminders
 reminders = SaferatesReminders(api)
 reminders.saferates_remind_me("YOUR_USER_ID", "This is your reminder!", delay_seconds=60)
 
-# Create a poll
 polls = SaferatesPolls(api)
 polls.saferates_create_poll("CHANNEL_ID", "What's your favorite color?", ["🔴", "🟢", "🔵"])
 
