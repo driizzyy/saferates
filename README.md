@@ -1,16 +1,22 @@
 # saferates
-Developed by: DriizzyyB
 
 > **WARNING:** User-token automation is against Discord ToS and can get your account banned.  
-> This library is for education/research only.  
+> This library is for education/research only.
+
+> Fully modular: each Discord function in its own `Saferates*` class
+
 > Need support? Join my Discord: https://discord.gg/2WPWZdKZxs
 
----
+
+## Badges
+
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+![Stars](https://img.shields.io/github/stars/driizzyy/saferates)
+![Github Releases](https://img.shields.io/github/v/release/driizzyy/saferates)
+![Discord](https://img.shields.io/discord/1385975508944027741)
 
 ## Features (as of v0.2.2)
 
-- Fully modular: each Discord function in its own `Saferates*` class
-- User-token only, for advanced Discord user automation
 - **Messaging:** Send/edit/delete, bulk, crosspost, pins, embeds, files, stickers
 - **Webhooks:** Send, edit, delete webhooks
 - **Channels:** Create, edit, delete text/voice/category
@@ -35,7 +41,6 @@ Developed by: DriizzyyB
 - **Utilities:** Emoji encoder, pretty print, file upload helper, and more
 - **Logging:** Color console/file, log levels, all actions logged
 
----
 
 ## Installation
 
@@ -49,7 +54,7 @@ git clone https://github.com/driizzyy/saferates.git
 cd saferates
 pip install .
 ```
-
+    
 ### Quick Example
 
 ```bash
@@ -85,6 +90,7 @@ polls = SaferatesPolls(api)
 polls.saferates_create_poll("CHANNEL_ID", "What's your favorite color?", ["🔴", "🟢", "🔵"])
 ```
 
+
 ### Logging
 
 All actions are logged to console (color) and optionally to a file.
@@ -99,3 +105,16 @@ Log to file:
 ```bash
 export SAFERATES_LOG_FILE=saferates.log
 ```
+
+
+## Sole Developer
+
+- [@DriizzyyB](https://www.github.com/driizzyy) (Discord: drakko5.56)
+
+
+## Feedback
+
+If you have any feedback, please join the discord and open a ticket
+
+
+[Discord Server](https://discord.gg/2WPWZdKZxs)
