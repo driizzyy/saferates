@@ -91,8 +91,11 @@ All actions are logged to console (color) and optionally to a file.
 
 Set log level:
 
+```bash
 export SAFERATES_LOG_LEVEL=DEBUG
-
+```
 Log to file:
 
+```bash
 export SAFERATES_LOG_FILE=saferates.log
+```
