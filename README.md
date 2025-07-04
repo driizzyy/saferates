@@ -44,12 +44,11 @@ pip install saferates
 ```
 or for the latest from source:
 
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/driizzyy/saferates.git
 cd saferates
 pip install .
+```
 
 ### Quick Example
 
