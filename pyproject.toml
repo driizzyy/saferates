@@ -1,0 +1,13 @@
+[project]
+name = "saferates"
+version = "0.2.2"
+description = "Discord API toolkit for user tokens"
+authors = [{name="DriizzyyB", email="driizzyyboosts@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+dependencies = ["httpx>=0.25.0"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
